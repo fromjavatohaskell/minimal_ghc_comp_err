@@ -1,0 +1,2 @@
+#!/bin/sh
+cabal build -w ~/ghc/bin/ghc 2>err_01.txt

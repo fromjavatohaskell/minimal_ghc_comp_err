@@ -1,0 +1,13 @@
+
+Main.hs:17:40: error:
+    • Couldn't match type: b0 -> Ordering
+                     with: forall a3. Data a3 => a3 -> Ordering
+      Expected: a2 -> GenericQ Ordering
+        Actual: a2 -> b0 -> Ordering
+    • In the first argument of ‘gzipWithQ’, namely ‘gcompare'’
+      In the first argument of ‘mconcat’, namely
+        ‘(gzipWithQ gcompare' x y)’
+      In the expression: mconcat (gzipWithQ gcompare' x y)
+   |
+17 |     gcompare' x y = mconcat (gzipWithQ gcompare' x y)
+   |                                        ^^^^^^^^^
